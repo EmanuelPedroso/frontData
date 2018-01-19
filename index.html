@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap_4.0.0.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Projeto Data</title>
+</head>
+<body>
+    <div class="container col-md-4 offset-md-4">
+        <div class="form-horizontal">
+            <h1>Calculadora de Data</h1>
+            <div class="row form-group">
+                <label class="col-md-6 offset-md-3 col-sm-10 offset-sm-1" for="minutos">Informe um valor em minutos</label>
+                <input class="form-control" type="text" id="minutos" name="minutos">
+            </div>
+            <div class="row form-group">
+                <label class="col-md-6 offset-md-3 col-sm-10 offset-sm-1" for="op">Selecione o operador</label>
+                <select id="operador" class="form-control">
+                    <option value="default">Selecione somar ou diminuir:</option>
+                    <option value="+">Somar</option>
+                    <option value="-">Subtrair</option>
+                </select>
+            </div>
+            <div class="row form-group">
+                <label class="col-md-6 offset-md-3 col-sm-10 offset-sm-1" for="data">Data atualizada</label>
+                <input class="form-control" type="DateTime-Local" id="data" name="data" value"">
+            </div>
+            <div class="row form-group">
+                <input class="col-md-4 offset-md-4 form-control btn" type="button" id="enviar" name="enviar" value="Calcular">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/current-date.js"></script>    
+</body>
+</html>
