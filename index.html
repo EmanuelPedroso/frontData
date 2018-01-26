@@ -8,12 +8,13 @@
     <title>Projeto Data</title>
 </head>
 <body>
-    <div class="container col-md-4 offset-md-4">
+    <div class="container col-md-6 offset-md-3">
         <div class="form-horizontal">
             <h1>Calculadora de Data</h1>
             <div class="row form-group">
                 <label class="col-md-6 offset-md-3 col-sm-10 offset-sm-1" for="minutos">Informe um valor em minutos</label>
                 <input class="form-control" type="text" id="minutos" name="minutos">
+                <p id="value" class="error hidden">Informe um valor válido!</p>
             </div>
             <div class="row form-group">
                 <label class="col-md-6 offset-md-3 col-sm-10 offset-sm-1" for="op">Selecione o operador</label>
@@ -22,10 +23,12 @@
                     <option value="+">Somar</option>
                     <option value="-">Subtrair</option>
                 </select>
+                <p id="operator" class="error hidden">Selecione somar ou diminuir!</p>
             </div>
             <div class="row form-group">
                 <label class="col-md-6 offset-md-3 col-sm-10 offset-sm-1" for="data">Data atualizada</label>
                 <input class="form-control" type="DateTime-Local" id="data" name="data" value"">
+                <p id="date" class="error hidden">Informe uma data válida!</p>
             </div>
             <div class="row form-group">
                 <input class="col-md-4 offset-md-4 form-control btn" type="button" id="enviar" name="enviar" value="Calcular">
